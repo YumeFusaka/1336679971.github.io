@@ -54,31 +54,6 @@
     
     
     <entry>
-      <title>石子合并</title>
-      <link href="/2023/06/08/%E7%9F%B3%E5%AD%90%E5%90%88%E5%B9%B6/"/>
-      <url>/2023/06/08/%E7%9F%B3%E5%AD%90%E5%90%88%E5%B9%B6/</url>
-      
-        <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> ll = <span class="type">long</span> <span class="type">long</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> lim = <span class="number">3e+2</span>;</span><br><span class="line">ll stone[lim+<span class="number">5</span>], sum[lim+<span class="number">5</span>], dp[lim+<span class="number">5</span>][lim+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line">cin &gt;&gt; n;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n;i++) &#123;</span><br><span class="line">cin &gt;&gt; stone[i];</span><br><span class="line">sum[i] = sum[i - <span class="number">1</span>] + stone[i];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> len = <span class="number">2</span>; len &lt;= n; len++) &#123;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line"><span class="type">int</span> j = i + len - <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (j &gt; n)<span class="keyword">break</span>;</span><br><span class="line">ll minn = <span class="number">0x3f3f3f3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> u = i; u &lt; j; u++) &#123;</span><br><span class="line">minn = <span class="built_in">min</span>(minn, dp[i][u] + dp[u + <span class="number">1</span>][j] + sum[j] - sum[i - <span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line">dp[i][j] = minn;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 数据结构与算法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 动态规划 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>欧拉筛</title>
       <link href="/2023/06/08/%E6%AC%A7%E6%8B%89%E7%AD%9B/"/>
       <url>/2023/06/08/%E6%AC%A7%E6%8B%89%E7%AD%9B/</url>
@@ -96,6 +71,31 @@
         <tags>
             
             <tag> 质数筛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>石子合并</title>
+      <link href="/2023/06/08/%E7%9F%B3%E5%AD%90%E5%90%88%E5%B9%B6/"/>
+      <url>/2023/06/08/%E7%9F%B3%E5%AD%90%E5%90%88%E5%B9%B6/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> ll = <span class="type">long</span> <span class="type">long</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> lim = <span class="number">3e+2</span>;</span><br><span class="line">ll stone[lim+<span class="number">5</span>], sum[lim+<span class="number">5</span>], dp[lim+<span class="number">5</span>][lim+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line">cin &gt;&gt; n;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n;i++) &#123;</span><br><span class="line">cin &gt;&gt; stone[i];</span><br><span class="line">sum[i] = sum[i - <span class="number">1</span>] + stone[i];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> len = <span class="number">2</span>; len &lt;= n; len++) &#123;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line"><span class="type">int</span> j = i + len - <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (j &gt; n)<span class="keyword">break</span>;</span><br><span class="line">ll minn = <span class="number">0x3f3f3f3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> u = i; u &lt; j; u++) &#123;</span><br><span class="line">minn = <span class="built_in">min</span>(minn, dp[i][u] + dp[u + <span class="number">1</span>][j] + sum[j] - sum[i - <span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line">dp[i][j] = minn;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据结构与算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 动态规划 </tag>
             
         </tags>
       
