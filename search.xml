@@ -8,7 +8,7 @@
       <link href="/2023/06/14/1.1.1%E7%BA%A2%E9%BB%91%E6%A0%91/"/>
       <url>/2023/06/14/1.1.1%E7%BA%A2%E9%BB%91%E6%A0%91/</url>
       
-        <content type="html"><![CDATA[<h1 id="1-红黑树的性质"><a href="#1-红黑树的性质" class="headerlink" title="1.红黑树的性质"></a>1.红黑树的性质</h1><p>1.每一个结点是红的或者黑的<br>2.根结点是黑的<br>3.每个叶子结点是黑的<br>4.如果一个结点是红的，则它的两个儿子都是黑的<br>5.对每个结点，从该结点到其子孙结点的所有路径上的包含相同数目的黑结点</p><h1 id="2-红黑树的左旋和右旋"><a href="#2-红黑树的左旋和右旋" class="headerlink" title="2.红黑树的左旋和右旋"></a>2.红黑树的左旋和右旋</h1><p><img src="/local_pic/C++后端/1.1.1红黑树/红黑树的左旋和右旋.png" alt="红黑树的左旋和右旋"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="1-红黑树的性质"><a href="#1-红黑树的性质" class="headerlink" title="1.红黑树的性质"></a>1.红黑树的性质</h1><p>1.每一个结点是红的或者黑的<br>2.根结点是黑的<br>3.每个叶子结点是黑的<br>4.如果一个结点是红的，则它的两个儿子都是黑的<br>5.对每个结点，从该结点到其子孙结点的所有路径上的包含相同数目的黑结点</p><h1 id="2-红黑树的左旋和右旋"><a href="#2-红黑树的左旋和右旋" class="headerlink" title="2.红黑树的左旋和右旋"></a>2.红黑树的左旋和右旋</h1><p><img src="/local_pic/C++后端/1.1.1红黑树/红黑树的左旋和右旋.png" alt="红黑树的左旋和右旋"><br><img src="/local_pic/background.png" alt="红黑树的左旋和右旋"></p>]]></content>
       
       
       <categories>
